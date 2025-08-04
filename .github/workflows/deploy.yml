@@ -20,7 +20,7 @@ jobs:
         username: ${{ secrets.VPS_USER }}
         key: ${{ secrets.VPS_PRIVATE_KEY }}
         script: |
-          cd /mnt/software/your_repository
+          cd /root/random-key-app
           git pull origin main
           npm install
           pm2 restart myapp
